@@ -9,6 +9,8 @@ import TasksScreen from '@/components/screens/TasksScreen';
 import ScriptsScreen from '@/components/screens/ScriptsScreen';
 import TrainingScreen from '@/components/screens/TrainingScreen';
 import TeamScreen from '@/components/screens/TeamScreen';
+import OnboardingScreen from '@/components/screens/OnboardingScreen';
+import ExamPrepScreen from '@/components/screens/ExamPrepScreen';
 
 export default function AppShell() {
   const [activeTab, setActiveTab] = useState<Tab>('home');
@@ -21,6 +23,8 @@ export default function AppShell() {
     coach: <CoachScreen {...screenProps} />,
     scripts: <ScriptsScreen {...screenProps} />,
     team: <TeamScreen {...screenProps} />,
+    onboarding: <OnboardingScreen />,
+    exam: <ExamPrepScreen {...screenProps} />,
   };
 
   return (

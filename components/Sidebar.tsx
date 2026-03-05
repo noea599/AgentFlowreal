@@ -5,11 +5,13 @@ import { Tab } from '@/components/BottomNav';
 import { useAuth } from '@/components/AuthProvider';
 
 const NAV_ITEMS: { icon: string; label: string; id: Tab }[] = [
-  { icon: '🏠', label: 'Dashboard', id: 'home' },
+  { icon: '🏠', label: 'Dashboard',  id: 'home' },
   { icon: '🎯', label: 'Daily Tasks', id: 'tasks' },
-  { icon: '💬', label: 'AI Coach', id: 'coach' },
-  { icon: '📄', label: 'Scripts', id: 'scripts' },
-  { icon: '👥', label: 'Team', id: 'team' },
+  { icon: '💬', label: 'AI Coach',   id: 'coach' },
+  { icon: '📄', label: 'Scripts',    id: 'scripts' },
+  { icon: '👥', label: 'Team',       id: 'team' },
+  { icon: '📋', label: 'Onboarding', id: 'onboarding' },
+  { icon: '✍️', label: 'Exam Prep',   id: 'exam' },
 ];
 
 export default function Sidebar({

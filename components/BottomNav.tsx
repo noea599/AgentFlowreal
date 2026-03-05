@@ -1,4 +1,4 @@
-type Tab = 'home' | 'tasks' | 'coach' | 'scripts' | 'team';
+type Tab = 'home' | 'tasks' | 'coach' | 'scripts' | 'team' | 'onboarding' | 'exam';
 
 const NAV_ITEMS: { icon: string; label: string; id: Tab }[] = [
   { icon: '🏠', label: 'Home', id: 'home' },
